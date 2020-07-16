@@ -1,0 +1,98 @@
+#a-1
+{
+    padding-right: 2px;
+}
+#a-1:hover
+{
+    color: white;
+    text-decoration: none;
+}
+.red
+{
+    background-color: rgb(51, 51, 95);
+}
+.brand-name-1
+{
+  color: white;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+  padding: 2px;
+}
+.card
+{
+    height: 100%;
+    margin: 2px;
+    border: none;
+}
+#nav-2
+{
+    background-image: url("https://wallpaperaccess.com/full/1512223.jpg");
+    background-color: white;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#search
+{
+    width: 100%;
+}
+.form-inline
+{
+    width: 80%;
+}
+h5 span{
+    font-size: 15px;
+    right: 0;
+}
+.container-liquid-1
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/originals/be/2a/7a/be2a7a01262b6e5ab091eee86aa87ead.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+.container-liquid-1 #btn-1{
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.container-liquid-1 #btn-2{
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.searchContainer {
+    display: inline-flex;
+    flex: 0.8 0.8 300px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .searchBox {
+    border: 0;
+    padding: 0.5em;
+    margin: 0;
+    
+  }
+  #coffee
+  {
+      background-color: rgb(235, 233, 233);
+      color: black;
+  }
+  .card-header
+  {
+      margin-bottom: 5px;
+      padding: 5px;
+      background-color: rgb(158, 154, 154);
+  }

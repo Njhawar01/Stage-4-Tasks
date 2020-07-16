@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap-1.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <title>Customer Menu</title>
+    <style>
+      .success
+      {
+        width: 100%; height: 40px; font-size: 15px; background-color: rgb(155, 212, 155); color: darkgreen;
+      }
+      .success p{
+          margin-top: 6px;
+          font-weight: 200;
+      }
+      #success
+      {
+        height: 40px;
+        margin-bottom: 5px;
+      }
+      .row
+      {
+        height: 40px;
+      }
+      .col, .col-8, .col-4, .col-10, .col-2
+      {
+        height: fit-content;
+        padding: 0em;
+      }
+      .dollar
+      {
+        color: rgb(192, 59, 59);
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .truck
+      {
+        margin-right: 2px;
+      }
+      .info
+      {
+        font-size: 12px; margin: 0px;
+      }
+      #coffee
+      {
+        background-color: black;
+        color: white;
+        padding: 0.25em;
+      }
+      .card-body
+      {
+        padding: 0px;
+        padding-top: 10px;
+      }
+      .active
+      {
+        font-size: 12.8px;
+      }
+      #fav1, #fav2, #fav3, #fav4, #fav5{
+        color: rgb(196, 187, 187);
+      }
+      .card 
+      {
+        width: 300px;
+        height: 500px;
+      }
+    </style>
+  </head>
+    <div class="d-block d-sm-none">
+      <nav class="navbar navbar-dark red">
+        <ul class="brand-name-1 nav navbar-nav navbar-left">
+              <li class="ml-1"><a href="../index.html" id="a-1"><i class="fas fa-video"></i> Movie Cruiser</a></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-light navbar-toggler-icon justify-content-md-right"></span>
+        </button>
+      </nav>
+      <div class="navigation">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="red p-4">
+            <ul class="nav navbar-nav-1">
+              <li><a href="../movie-list-customer.html"><i class="fas fa-bars"></i> Movie List</a></li>
+              <li><a href="../watchlist.html"><i class="fas fa-tv"></i> WatchList</a></li>
+                
+              </ul> 
+          </div>
+        </div>
+        
+      </div>
+      </div>
+      <div class="d-none d-sm-block">
+        <nav class="navbar navbar-dark red">
+          <div class="container-fluid">
+           <ul class="brand-name-1 nav navbar-nav navbar-left">
+            <li class="mr-1 ml-1"><a href="index.html" id="a-1"><i class="fas fa-video"></i> Movie Cruiser</a></li>
+           </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="mr-1"><a href="../movie-list-customer.html" data-toggle="tooltip" data-placement="top" title="Menu"><i class="fas fa-bars"></i> Movie List</a></li>
+            <li class="mr-1"><a href="../watchlist.html" data-toggle="tooltip" data-placement="top" title="watchlist"><i class="fas fa-tv"></i> WatchList</a></li>
+          </ul> 
+      </div>  
+    </nav>
+    </div>
+    <div class="navbar navbar-light justify-content-center" id="nav-2" style="margin-bottom: 24px;">
+      <form class="searchContainer">
+        <i class="fas fa-film fa-2x" id="coffee"></i>
+        <input class="searchBox" type="search" placeholder="Search Movie" aria-label="Search" id="search" onkeyup="myFunction()">
+          <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      </form>
+    </div>
+    <div class="text-center">
+      <span class="badge badge-success" id="favourite1" style="margin-bottom: 10px; font-size: 15px;"></span>
+      <span class="badge badge-danger" id="favourite2" style="margin-bottom: 10px; font-size: 15px;"></span>
+      </div>
+    <div class="card-deck" id="myItems">
+      <div class="card">
+        <img class="card-img-top" src="https://graphicdesignjunction.com/wp-content/uploads/2012/05/large/movie-poster-3.jpg" alt="Cosmopolis">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-10">
+              <h5 class="card-title text-left">Cosmopolis</h5>
+            </div>
+            <div class="col-2 text-right">
+              <p class="dollar"><i class="fas fa-dollar-sign"></i>6.1M</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+          <p class="card-text"><small class="text-left text-muted"><span class="badge badge-success active">Active</span>Drama/Thriller</small></p>
+            </div>
+            <div class="col-4 text-right">
+              <span class="badge badge-info info">5.1/10</span>
+            </div>
+          </div>
+          <div class="row" id="success">
+            <div class="col">
+            <span class="badge badge-success success"><p>Item added Successfully.</p></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4" style="line-height: 15px;">
+              <p style="margin-bottom: 0em;"><small class="text-left text-muted"><i class="far fa-clock"></i> Release<br>06/07/2012</small></p>
+            </div>
+            <div class="col-8 text-right">
+              <a href="#" id="fav3" onclick="return favourite(this.id)"><i class="fas fa-heart mr-1"></i></a><a href="item-3.html" class="btn btn-danger">Add to WatchList</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span class="badge badge-danger" id="favourite"></span>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <footer class="blockquote-footer">
+        &copy;Nitesh Jhawar 2020
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+</body>
+</html>

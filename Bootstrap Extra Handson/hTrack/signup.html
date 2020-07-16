@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/css/gijgo.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>Sign Up</title>
+    <style>
+      h3
+      {
+        margin-left: 0px;
+        padding-top: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="container-fluid-1">
+      <div class="d-block d-sm-none">
+      <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand-1 justify-content-md-left" id="span-1">Payroll</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon justify-content-md-right"></span>
+        </button>
+      </nav>
+      <div class="navigation">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul class="nav navbar-nav-1">
+              <li class="mb-2"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li class="mb-2"><a href="products.html"><i class="fab fa-product-hunt"></i>roducts</a></li>
+              <li class="mb-2"><a href="goals.html"><i class="fas fa-bullseye"></i> Goals</a></li>
+              <li class="mb-2"><a href="signup.html"><i class="fas fa-user-plus"></i> Signup</a></li>
+              <li><a href="https://njhawar01.github.io/Bootstrap-Assignment"><i class="fa fa-chevron-circle-left"></i> Main Menu</a></li>
+            </ul> 
+          </div>
+        </div>    
+      </div>
+      </div>
+    <div class="d-none d-sm-block">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" style="padding: 5px;">Payroll</a>
+          </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="mr-2"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="mr-2"><a href="products.html"><i class="fab fa-product-hunt"></i>roducts</a></li>
+          <li class="mr-2"><a href="goals.html"><i class="fas fa-bullseye"></i> Goals</a></li>
+          <li class="mr-2"><a href="signup.html"><i class="fas fa-user-plus"></i> Signup</a></li>
+          <li><a href="https://njhawar01.github.io/Bootstrap-Assignment"><i class="fa fa-chevron-circle-left"></i> Main Menu</a></li>
+          </ul> 
+      </div>  
+    </nav>
+    </div>
+
+    <div class="container">
+        <h3>New Employee</h3>
+        <form>
+        <div class="form-row">
+        <div class="form-group col-md-4">
+              <label for="First-Name">First Name</label>
+              <input type="text" class="form-control" style="padding: 2px;" id="First-Name" placeholder="First Name">
+              <span class="badge badge-danger" style="font-size: 10px;"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="Middle-Name">Middle Name</label>
+            <input type="text" class="form-control" style="padding: 2px;" id="Middle-Name" placeholder="Middle Name">
+            <span class="badge badge-danger" style="font-size: 10px;"></span>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="Last-Name">Last Name</label>
+          <input type="text" class="form-control" style="padding: 2px;" id="Last-Name" placeholder="Last Name">
+          <span class="badge badge-danger" style="font-size: 10px;"></span>
+        </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+              <label for="address1">Address Line 1</label>
+              <input type="text" class="form-control" style="padding: 2px;" id="address1" placeholder="Address Line">
+              <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="address2">Address Line 2</label>
+                  <input type="text" class="form-control" id="address2" placeholder="Address Line 2">
+                  <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control" style="padding: 2px;" id="Email" placeholder="Email Id">
+                    <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="Password">Password</label>
+                  <input type="text" class="form-control" style="padding: 2px;" id="Password" placeholder="Password">
+                  <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="CPassword">Confirm Password</label>
+                <input type="text" class="form-control" style="padding: 2px;" id="CPassword" placeholder="Confirm Password">
+                <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              </div>
+              <div class="form-row">
+              <div class="form-group col-md-3">
+                  <label for="category">Department</label>
+                  <select id="category" class="form-control">
+                      <option>Choose one...</option>
+                      <option>HR</option>
+                      <option>Sales</option>
+                      <option>Marketing</option>
+                      <option>R & D</option>
+                  </select>
+                  <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="Date Of Birth">Date Of Birth</label>
+                <input type="text" class="form-control" id="dateOfBirth">
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="active">Active</label><br>
+                  <div class="custom-control custom-radio custom-control-inline" style="padding-left: 5px;">
+                      <input type="radio" id="radio1" name="active" class="custom-control-input">
+                      <label class="custom-control-label" for="radio1">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline" style="padding: 0em;">
+                      <input type="radio" id="radio2" name="active" class="custom-control-input">
+                      <label class="custom-control-label" for="radio2">Female</label>
+                    </div>
+                    <span class="badge badge-danger" id="radio-error" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                <div class="form-group form-check" style="padding: 0px;">
+                  <label class="form-check-label" for="check1" style="margin: 0px; padding: 0px;">Permanent</label>
+                  <input type="checkbox" class="form-check-input" id="check1" style="margin: 0px; padding: 0px;">
+                </div>
+            </div>
+          </div>
+              <div class="form-row">
+              <div class="form-group col-md-12" style="padding-bottom: 10px;">
+                  <a href="index.html"><button type="button" class="btn btn-primary">Save</button></a>
+              </div>
+              </div>
+          </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js" type="text/javascript"></script>
+    <script>
+      $('#dateOfBirth').datepicker({
+      uiLibrary: 'bootstrap4',       
+      format: 'dd/mm/yyyy'
+      });
+  </script>
+
+</html>
